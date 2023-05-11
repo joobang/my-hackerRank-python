@@ -1,0 +1,50 @@
+"""
+Python has built-in string validation methods for basic data. It can check if a string is composed of alphabetical characters, alphanumeric characters, digits, etc.
+"""
+def isalnum_val(str_list):
+    for s in str_list:
+        if s.isalnum():
+            return True
+        else:
+            pass
+    return False
+
+def isalpha_val(str_list):
+    for s in str_list:
+        if s.isalpha():
+            return True
+        else:
+            pass
+    return False
+
+def isdigit_val(str_list):
+    for s in str_list:
+        if s.isdigit():
+            return True
+        else:
+            pass
+    return False
+
+def islower_val(str_list):
+    for s in str_list:
+        if s.islower():
+            return True
+        else:
+            pass
+    return False
+
+def isupper_val(str_list):
+    for s in str_list:
+        if s.isupper():
+            return True
+        else:
+            pass
+    return False
+
+if __name__ == '__main__':
+    s = input()
+    print(isalnum_val(s))
+    print(isalpha_val(s))
+    print(isdigit_val(s))
+    print(islower_val(s))
+    print(isupper_val(s))
